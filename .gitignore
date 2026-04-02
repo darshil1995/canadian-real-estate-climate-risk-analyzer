@@ -1,0 +1,32 @@
+# --- Environments ---
+.venv/
+env/
+venv/
+ENV/
+
+# --- Sensitive Data ---
+.env
+*.pyc
+__pycache__/
+
+# --- Data Layers (Medallion) ---
+# We do not track the actual data files, only the code to create them.
+data/bronze/
+data/silver/
+data/gold/
+*.parquet
+*.json
+*.csv
+
+# --- Local Databases & Logs ---
+mlflow.db
+mlruns/
+*.log
+progress_status.txt
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
+
+#Others
+ProjectInfo.docx

@@ -1,0 +1,20 @@
+# Ignore the virtual environment
+.venv/
+venv/
+
+# Ignore the local data folder (we mount this as a volume instead)
+data/
+
+# Ignore Git history
+.git/
+.github/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore local config/logs
+.env
+mlflow.db
+mlruns/
+progress_status.txt
